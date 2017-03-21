@@ -30,16 +30,16 @@ public class RobotController {
             switch (comand) {
                 case 'M':
                     switch (robot.getC()) {
-                        case N: //norte
+                        case N: 
                             robot.setY(robot.getY() + 1);
                             break;
-                        case S: //sul
+                        case S: 
                             robot.setY(robot.getY() - 1);
                             break;
-                        case W: //oeste <--
+                        case W: 
                             robot.setX(robot.getX() - 1);
                             break;
-                        case E: //leste -->
+                        case E: 
                             robot.setX(robot.getX() + 1);
                             break;
                         default:
@@ -55,10 +55,10 @@ public class RobotController {
                         case S:
                             robot.setC(CardinalPoints.E);
                             break;
-                        case W: //oeste <--
+                        case W: 
                             robot.setC(CardinalPoints.S);
                             break;
-                        case E: //leste -->
+                        case E: 
                             robot.setC(CardinalPoints.N);
                             break;
                         default:
@@ -68,16 +68,16 @@ public class RobotController {
                 //vire a direita
                 case 'R':
                     switch (robot.getC()) {
-                        case N: //norte
+                        case N: 
                             robot.setC(CardinalPoints.E);
                             break;
-                        case S: //sul
+                        case S: 
                             robot.setC(CardinalPoints.W);
                             break;
-                        case W: //oeste <--
+                        case W: 
                             robot.setC(CardinalPoints.N);
                             break;
-                        case E: //leste -->
+                        case E: 
                             robot.setC(CardinalPoints.S);
                             break;
                         default:
